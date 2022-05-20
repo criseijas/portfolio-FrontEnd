@@ -25,13 +25,21 @@ a{
 }
 #perfil{
     filter: grayscale();
-    margin-left: 60px;
-    margin-top: 180px;
+    margin-left: 80px;
+    margin-top: 170px;
+    
 }
 @media (max-width: 740px) {
 .logos{
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    flex-direction: row;
     align-items: center;
 }
 }
+@media (max-width: 412px) {
+    #perfil{
+        margin-top: 100px;
+        margin-left: 45px;
+        align-items: center;
+    }
+    }
