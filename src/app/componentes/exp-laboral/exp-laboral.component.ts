@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-exp-laboral',
   templateUrl: './exp-laboral.component.html',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExpLaboralComponent implements OnInit {
 
+  
+
   constructor() { }
 
   ngOnInit(): void {
+       
   }
+  
+  
 
 }
