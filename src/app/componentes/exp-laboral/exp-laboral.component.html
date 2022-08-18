@@ -1,52 +1,36 @@
 <div class="container">
   <div class="row">
+    <div class="titulo">
+      <h3 class="exp">Experiencia Laboral</h3>
+      <br><br>
+      <table class="table table-borderless titulo">
+        <tbody>
+          <tr *ngFor="let Experiencia of expe">
+            <td>
+              <h4><br>{{Experiencia.anioE}}</h4>
+            </td>
+            <td>
+              <h4><br>{{Experiencia.empresaE}}</h4>
+            </td>
+            <td>
+              <h4><br>{{Experiencia.puestoE}}</h4>
+            </td>
+            <td>
+              <h4><br>{{Experiencia.tareasE}}</h4>
+            </td>
+            <td *ngIf="isLogged">
+              <button type="button" class="btn outline:none titulo" routerLink="/nuevaexp" *ngIf="isLogged">
+                <i class="fa fa-solid fa-plus"></i></button>
 
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 titulo">
-      <h2 class="exp">Experiencia Laboral</h2>
+              <button class="btn outline:none" routerLink="editexp/{{Experiencia.id}}">
+                <i class="fa2 fa-regular fa-pen-to-square"></i></button>
 
-      <button type="button" class="btn btn-outline-success titulo" routerLink="/nuevaexp" *ngIf="isLogged">
-        <i class="fa-solid fa-square-plus"></i> Nueva Experiencia</button>
-      <br /><br />
+              <button class="btn outline:none titulo" (click)="delete(Experiencia.id)">
+                <i class="fas fa-light fa-trash-can"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-
-    <table class="table table-borderless titulo">
-
-      <thead class="titulo">
-        <tr>
-          <th><h4>Empresa:</h4></th>
-          <th><h4>Puesto:</h4></th>
-          <th><h4>Años trabajados:</h4></th>
-          <th><h4>Tareas realizadas:</h4></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let Experiencia of expe">
-
-          <td>
-            <h4><br>{{Experiencia.anioE}}</h4>
-          </td>
-          <td>
-            <h4><br>{{Experiencia.empresaE}}</h4>
-          </td>
-          <td>
-            <h4><br>{{Experiencia.puestoE}}</h4>
-          </td>
-          <td>
-            <h4><br>{{Experiencia.tareasE}}</h4>
-          </td>
-
-          <td *ngIf="isLogged">
-            <button class="btn btn-light titulo" routerLink="editexp/{{Experiencia.id}}">
-              <i class="bi bi-pencil-fill"></i> Editar</button>
-          </td>
-
-          <td *ngIf="isLogged">
-            <button class="btn btn-danger titulo" (click)="delete(Experiencia.id)">
-              <i class="bi bi-trash-fill"></i> Borrar</button>
-          </td>
-
-        </tr>
-      </tbody>
-    </table>
   </div>
 </div>

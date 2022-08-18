@@ -43,8 +43,4 @@ export class ExpLaboralComponent implements OnInit {
     }
   }
 
-
-
-
-
 }

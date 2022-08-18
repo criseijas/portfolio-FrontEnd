@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreP">Nombre del proyecto</label>
+                    <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="nombreP" required>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="descripcionP">Descripción del proyecto</label>
+                    <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="descripcionP" required>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="img">Imagen del proyecto</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la URL de la imagen" id="img" name="img" [(ngModel)]="img" required>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="repo">Repositorio Github:</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la dirección del repositorio de Github" id="repo" name="repo"
+                        [(ngModel)]="repo" required>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Agregar proyecto
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

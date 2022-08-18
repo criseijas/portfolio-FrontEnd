@@ -7,11 +7,20 @@ h3{
     float: right;
     margin: 3px;
     cursor: pointer;
+    color: deepskyblue;
 }
 .fas{
     font-size: 20px;
     float: right;
     margin: 3px;
     cursor: pointer;
+    color: crimson;
 
+}
+.fa {
+    font-size: 20px;
+    float: right;
+    margin: 3px;
+    cursor: pointer;
+    color: forestgreen
 }

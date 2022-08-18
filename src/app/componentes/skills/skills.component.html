@@ -1,72 +1,24 @@
 <div class="container titulo">
-    <h3>Hard and Soft Skills</h3>
-    <div class="row">
-                
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          
-          <h4 style="text-align: center;">Front End</h4>
-          <i class="fas fa-light fa-trash-can "></i> <i class="fa2 fa-regular fa-pen-to-square"></i>
-            <br/>
-            <div class="progress">
-              <div class="progress-bar bg-warning" style="width:85%"><strong style="color: black;">HTML5 - 85%</strong></div>
-            </div>
-            <br/>
-            <div class="progress">
-              <div class="progress-bar bg-success" style="width:80%"><strong style="color: black;">CSS-80%</strong></div>
-            </div>
-            <br/>
-            <div class="progress">
-                <div class="progress-bar bg-danger" style="width:70%"><strong style="color: black;">JAVASCRIPT-70%</strong></div>
-            </div>
-  
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <h4 style="text-align: center;">Back End</h4>
-            <i class="fas fa-light fa-trash-can"></i> <i class="fa2 fa-regular fa-pen-to-square"></i>
-            <br/>
-            <div class="progress">
-              <div class="progress-bar bg-info" style="width:85%"><strong style="color: black;">85%</strong></div>
-            </div>
-            <br/>
-            <div class="progress">
-              <div class="progress-bar bg-info" style="width:80%"><strong style="color: black;">80%</strong></div>
-            </div>
-            <br/>
-            <div class="progress">
-                <div class="progress-bar bg-info" style="width:70%"><strong style="color: black;">70%</strong></div>
-            </div>
+  <h3>Hard and Soft Skills</h3>
+  <br>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" *ngFor="let skill of skills">
 
-        </div>
+      <div class="progress mb-4">
+        <div class="progress-bar progress-bar bg-success" role="progressbar" [style.width.%]="skill.porcentajeS" aria-valuenow="20"
+          aria-valuemin="0" aria-valuemax="100">{{skill.nombreS}}</div>
+      </div>
 
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" *ngIf="isLogged">
+
+        <button type="button" class="btn outline:none titulo" routerLink="/nuevaskill">
+          <i class="fa fa-solid fa-plus"></i></button>
+
+        <button type="button" class="btn outline:none" routerLink="editskill/{{skill.id}}">
+          <i class="fa2 fa-regular fa-pen-to-square"></i></button>
+
+        <button type="button" class="btn outline:none titulo" (click)="delete(skill.id)">
+          <i class="fas fa-light fa-trash-can"></i></button>
+      </div>
     </div>
-    <div class="row">
-                
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <h4 style="text-align: center;">Otros</h4>
-            <i class="fas fa-light fa-trash-can"></i> <i class="fa2 fa-regular fa-pen-to-square"></i>
-            <br/>
-            <div class="progress">
-              <div class="progress-bar bg-info" style="width:85%"><strong style="color: black;">85%</strong></div>
-            </div>
-            <br/>
-            <div class="progress">
-              <div class="progress-bar bg-info" style="width:80%"><strong style="color: black;">80%</strong></div>
-            </div>
-            <br/>
-            <div class="progress">
-                <div class="progress-bar bg-info" style="width:70%"><strong style="color: black;">70%</strong></div>
-            </div>
-  
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <h4 style="text-align: center;">Idioma</h4>
-            <i class="fas fa-light fa-trash-can"></i> <i class="fa2 fa-regular fa-pen-to-square"></i>
-            <br/>
-            <div class="progress">
-              <div class="progress-bar bg-info" style="width:70%"><strong style="color: black;">INGLES - 70%</strong></div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
+  </div>
