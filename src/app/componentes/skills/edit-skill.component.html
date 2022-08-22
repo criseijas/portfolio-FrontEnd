@@ -6,19 +6,19 @@
                 <br />
                 <div class="form-group">
                     <label for="nombreS">Nombre de la habilidad</label>
-                    <input type="text" class="form-control" id="nombreS" name="nombreS" [(ngModel)]="skill.nombreS"
+                    <input type="text" class="form-control" placeholder="Ingrese la habilidad y el porcentaje de la misma" id="nombreS" name="nombreS" [(ngModel)]="skill.nombreS"
                         required>
                 </div>
                 <br />
                 <div class="form-group">
                     <label for="porcentajeS">Porcentaje de la habilidad</label>
-                    <input type="text" class="form-control" id="porcentajeS" name="porcentajeS"
+                    <input type="text" class="form-control" placeholder="Vuelva a ingresar el porcentaja de la habilidad" id="porcentajeS" name="porcentajeS"
                         [(ngModel)]="skill.porcentajeS" required>
                 </div>
 
                 <br>
                 <br>
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn btn-dark">
                     Editar habilidad
                 </button>
             </form>

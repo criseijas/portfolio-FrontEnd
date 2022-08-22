@@ -1,20 +1,26 @@
 <div class="container">
 
-    <div class="row">
-      
-       <div class="col1 col-xs-12 col-sm-4 col-md-4 col-lg-4 titulo">
-          <br/><br/> <br/>
-          <h1>{{persona.nombre}} {{persona.apellido}}</h1>
-          <h2>{{persona.titulo}}</h2>
-       </div>
-       <div class="col2 col-xs-12 col-sm-8 col-md-8 col-lg-8 titulo">
-         <br/><br/>
-         <br/><i class="fas fa-light fa-trash-can"></i> <i class="fa2 fa-regular fa-pen-to-square"></i>
-         <h1>Acerca de mí</h1>
-         <p>{{persona.descripcion}}</p>
-         
-       </div>
- 
+  <div class="row" *ngFor="let perso of persona">
+    <div class="col1 col-xs-12 col-sm-4 col-md-4 col-lg-4 titulo">
+      <br /><br /> <br />
+      <h1>{{perso.nombre}} {{perso.apellido}}</h1>
+      <h2>{{perso.titulo}}</h2>
     </div>
- 
- </div>
+    <div class="col2 col-xs-12 col-sm-8 col-md-8 col-lg-8 titulo">
+      <br /><br />
+      <h1>Acerca de mí</h1>
+      <p>{{perso.descripcion}}</p>
+
+      <div *ngIf="isLogged">
+        <!--<button type="button" class="btn outline:none titulo" routerLink="/nuevaper" *ngIf="isLogged">
+          <i class="fa fa-solid fa-plus"></i></button>-->
+
+        <button class="btn outline:none" routerLink="editper/{{perso.id}}">
+          <i class="fa2 fa-regular fa-pen-to-square"></i></button>
+
+        <!--<button class="btn outline:none titulo" (click)="delete(perso.id)">
+          <i class="fas fa-light fa-trash-can"></i></button>-->
+      </div>
+    </div>
+  </div>
+</div>

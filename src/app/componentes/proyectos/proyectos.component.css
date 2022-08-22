@@ -1,15 +1,17 @@
-h3{
+h3 {
     margin-top: 45px;
-    margin-left: 15px;
+    text-shadow: grey 0 0 10px;
 }
-.fa2{
+
+.fa2 {
     font-size: 20px;
     float: right;
     margin: 3px;
     cursor: pointer;
     color: deepskyblue;
 }
-.fas{
+
+.fas {
     font-size: 20px;
     float: right;
     margin: 3px;
@@ -17,6 +19,7 @@ h3{
     color: crimson;
 
 }
+
 .fa {
     font-size: 20px;
     float: right;

@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EditAcercaComponent } from './componentes/acerca-de/edit-acerca.component';
+import { NewAcercaComponent } from './componentes/acerca-de/new-acerca.component';
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
 import { EditExperienciaComponent } from './componentes/exp-laboral/edit-experiencia.component';
 import { NewExperienciaComponent } from './componentes/exp-laboral/new-experiencia.component';
+import { EditFooterComponent } from './componentes/footer/edit-footer.component';
+import { NewFooterComponent } from './componentes/footer/new-footer.component';
+import { EditHeaderComponent } from './componentes/header/edit-header.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
@@ -21,7 +26,12 @@ const routes: Routes = [
   {path:'nuevaskill', component: NewSkillComponent },
   {path:'editskill/:id', component: EditSkillComponent},
   {path:'nuevopro', component: NewProyectoComponent},
-  {path:'editpro/:id', component: EditProyectoComponent}
+  {path:'editpro/:id', component: EditProyectoComponent},
+  {path:'editper/:id', component: EditAcercaComponent},
+  {path:'nuevaper', component: NewAcercaComponent},
+  {path:'nuevoconta', component: NewFooterComponent},
+  {path:'editconta/:id', component: EditFooterComponent},
+  {path:'editheader/:id', component: EditHeaderComponent}
   
 ];
 

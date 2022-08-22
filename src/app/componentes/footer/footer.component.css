@@ -1,14 +1,28 @@
 .container {
-height: 60%;
-color: white;
-padding: 15px;
-margin-top: 50px;
+    height: 60%;
+    color: white;
 }
-.bi{
-    margin: 5px;
-    color: cadetblue;
+
+.fa2 {
+    font-size: 20px;
+    float: right;
+    margin: 3px;
+    cursor: pointer;
+    color: deepskyblue;
 }
-.fas{
-    color: cadetblue;
-    font-size: 18px;
+
+.fas {
+    font-size: 20px;
+    float: right;
+    margin: 3px;
+    cursor: pointer;
+    color: crimson;
+}
+
+.fa {
+    font-size: 20px;
+    float: right;
+    margin: 3px;
+    cursor: pointer;
+    color: forestgreen
 }

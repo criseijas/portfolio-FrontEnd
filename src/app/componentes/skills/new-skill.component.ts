@@ -23,10 +23,10 @@ export class NewSkillComponent implements OnInit {
 
     this.skillServ.save(skill).subscribe(
       data => {
-        alert("Skill añadido");
+        alert("habilidad añadida");
         this.router.navigate(['']);
       }, err => {
-        alert("No se pudo añadir el skill");
+        alert("No se pudo añadir la habilidad");
         this.router.navigate(['']);
       }
     );

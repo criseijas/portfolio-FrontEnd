@@ -23,7 +23,7 @@ export class NewProyectoComponent implements OnInit {
   onCreate(): void {
     const expe = new Proyecto(this.nombreP, this.descripcionP, this.img, this.repo);
     this.proServ.save(expe).subscribe(data => {
-      alert("Experiencia añadida correctamente");
+      alert("Proyecto añadido correctamente");
       this.router.navigate(['']);
     }, err => {
       alert("No autorizado");

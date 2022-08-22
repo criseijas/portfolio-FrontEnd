@@ -24,6 +24,11 @@ import { NewSkillComponent } from './componentes/skills/new-skill.component';
 import { EditSkillComponent } from './componentes/skills/edit-skill.component';
 import { NewProyectoComponent } from './componentes/proyectos/new-proyecto.component';
 import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
+import { NewAcercaComponent } from './componentes/acerca-de/new-acerca.component';
+import { NewFooterComponent } from './componentes/footer/new-footer.component';
+import { EditFooterComponent } from './componentes/footer/edit-footer.component';
+import { EditHeaderComponent } from './componentes/header/edit-header.component';
+
 
 
 
@@ -50,6 +55,11 @@ import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.com
     EditSkillComponent,
     NewProyectoComponent,
     EditProyectoComponent,
+    NewAcercaComponent,
+    NewFooterComponent,
+    EditFooterComponent,
+    EditHeaderComponent,
+    
     
       
   

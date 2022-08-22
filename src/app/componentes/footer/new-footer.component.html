@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreC">Nombre del contacto</label>
+                    <input type="text" class="form-control" id="nombreC" name="nombreC" [(ngModel)]="nombreC" required>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="apellidoC">Apellido del contacto</label>
+                    <input type="text" class="form-control" id="apellidoC" name="apellidoC" [(ngModel)]="apellidoC" required>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="emailC">Email</label>
+                    <input type="text" class="form-control" id="emailC" name="emailC" [(ngModel)]="emailC" required>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="tel">Telefono</label>
+                    <input type="text" class="form-control" id="tel" name="tel"
+                        [(ngModel)]="tel" required>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-dark">
+                    Agregar contacto
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

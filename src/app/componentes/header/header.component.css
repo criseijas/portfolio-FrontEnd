@@ -1,60 +1,72 @@
-.container{
-    background-image: url(../../../assets/fondo.jpg);
+.container {
+    /*background-image: url(../../../assets/fondo.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-      
+
 }
-.bi{
+
+.bi {
     color: white;
 }
 
-a{
+a {
     float: right;
     margin-top: 30px;
     margin-left: 10px;
 }
 
-.btn{
+.btn {
     float: right;
     margin-top: 30px;
     margin-left: 15px;
     margin-right: 15px;
 }
-#perfil{
+
+#perfil {
     filter: grayscale();
     margin-left: 80px;
     margin-top: 170px;
-    
+
 }
+
 @media (max-width: 740px) {
-.logos{
-    display: inline-block;
-    flex-direction: row;
-    align-items: center;
+    .logos {
+        display: inline-block;
+        flex-direction: row;
+        align-items: center;
+    }
 }
-}
+
 @media (max-width: 412px) {
-    #perfil{
+    #perfil {
         margin-top: 100px;
         margin-left: 45px;
         align-items: center;
-        
+
     }
-    }
-    .fa{
-        color: white;
-        float: right;
-        margin-top: 10px;
-        font-size: 25px;
-        cursor: pointer;
-    }
-    .edit{
-        color: white;
-        font-size: 25px;
-        cursor: pointer;
-             
-    }
-    
+}
+
+.fa {
+    color: white;
+    float: right;
+    margin-top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.edit {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.fa2 {
+    font-size: 22px;
+    float: right;
+    cursor: pointer;
+    color: deepskyblue;
+}

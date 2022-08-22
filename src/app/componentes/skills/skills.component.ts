@@ -38,7 +38,7 @@ export class SkillsComponent implements OnInit {
         data => {
           this.cargarSkills();
         }, err => {
-          alert("No se pudo borrar la experiencia");
+          alert("No se pudo borrar la habilidad");
         }
       )
 

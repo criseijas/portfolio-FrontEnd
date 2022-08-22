@@ -10,13 +10,34 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class EditAcercaComponent implements OnInit {
 
-   
-  
-  constructor() { }
+  per: Persona = null;
+
+  constructor(private persoServ: PersonaService, private activatedRouter: ActivatedRoute, private router: Router) { }
+
+  isLogged = false;
 
   ngOnInit(): void {
-    
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.persoServ.detail(id).subscribe(
+      data => {
+        this.per = data;
+      }, err => {
+        alert("Se produjo un error al modificar la persona");
+        this.router.navigate(['']);
+      }
+    )
   }
 
-  
+  onUpdate(): void {
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.persoServ.upDate(id, this.per).subscribe(
+      data => {
+        this.router.navigate(['']);
+      }, err => {
+        alert("No esta autorizado para modificar la persona");
+        this.router.navigate(['']);
+      })
+  }
+
+
 }

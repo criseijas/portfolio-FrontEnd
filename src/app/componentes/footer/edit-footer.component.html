@@ -1,0 +1,37 @@
+<div class="container" *ngIf="conta">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+                <br />
+                <div class="form-group">
+                    <label for="nombreC">Nombre del contacto</label>
+                    <input type="text" class="form-control" id="nombreC" name="nombreC" [(ngModel)]="conta.nombreC" required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="apellidoC">Apellido del contacto</label>
+                    <input type="text" class="form-control" id="apellidoC" name="apellidoC" [(ngModel)]="conta.apellidoC"
+                        required>
+                </div>
+
+                <br />
+                <div class="form-group">
+                    <label for="emailC">Email</label>
+                    <input type="text" class="form-control" id="emailC" name="emailC" [(ngModel)]="conta.emailC"
+                        required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="tel">Telefono</label>
+                    <input type="text" class="form-control" id="tel" name="tel" [(ngModel)]="conta.tel"
+                        required>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-dark">
+                    Editar contacto
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

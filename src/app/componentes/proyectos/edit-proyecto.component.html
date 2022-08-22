@@ -1,1 +1,37 @@
-<p>edit-proyecto works!</p>
+<div class="container" *ngIf="proye">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+                <br />
+                <div class="form-group">
+                    <label for="nombreP">Nombre del proyecto</label>
+                    <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="proye.nombreP" required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="descripcionP">Descripción del proyecto</label>
+                    <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="proye.descripcionP"
+                        required>
+                </div>
+
+                <br />
+                <div class="form-group">
+                    <label for="img">Imagen del proyecto</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la URL de la imagen" id="img" name="img" [(ngModel)]="proye.img"
+                        required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="repo">Repositorio Github</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la dirección del repositorio de Github" id="repo" name="repo" [(ngModel)]="proye.repo"
+                        required>
+                </div>
+                <br/>
+                <button type="submit" class="btn btn-dark">
+                    Editar Proyecto
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

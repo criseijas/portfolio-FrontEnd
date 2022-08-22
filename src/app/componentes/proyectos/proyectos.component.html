@@ -1,6 +1,8 @@
 <div class="container titulo">
   <h3>Mis Proyectos</h3>
-
+  <button type="button" class="btn outline:none titulo" style="color: green; font-size: 19px;" routerLink="/nuevopro"
+    *ngIf="isLogged">
+    <i class="fa fa-solid fa-plus"></i> Nuevo proyecto</button>
   <div class="card mb-3" style="max-width: 650px;">
     <div class="row g-0" *ngFor="let proye of pro">
       <div class="col-md-4">
@@ -9,22 +11,16 @@
       <div class="col-md-8">
         <div class="card-body">
           <h5 class="card-title">{{proye.nombreP}}</h5>
-          <p class="card-text">{{proye.descripcionP}}<br>{{proye.repo}}<!--<a [ngStyle]="{'href':'proye.repo'}"></a>--></p>
-
-        
-      </div>
-      <div *ngIf="isLogged">
-        <button type="button" class="btn outline:none titulo" routerLink="/nuevopro">
-          <i class="fa fa-solid fa-plus"></i></button>
-        
-        <button class="btn outline:none" routerLink="editpro/{{proye.id}}">
-          <i class="fa2 fa-regular fa-pen-to-square"></i></button>
-        
-        <button class="btn outline:none titulo" (click)="delete(proye.id)">
-          <i class="fas fa-light fa-trash-can"></i></button>
+          <p class="card-text">{{proye.descripcionP}}<br><a [href]="proye.repo">Repositorio Github</a></p>
         </div>
+
+        <button class="btn outline:none" routerLink="editpro/{{proye.id}}" *ngIf="isLogged">
+          <i class="fa2 fa-regular fa-pen-to-square"></i></button>
+
+        <button class="btn outline:none titulo" (click)="delete(proye.id)" *ngIf="isLogged">
+          <i class="fas fa-light fa-trash-can"></i></button>
+
+      </div>
     </div>
   </div>
-</div>
-
 </div>

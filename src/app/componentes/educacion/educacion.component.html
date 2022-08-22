@@ -3,31 +3,31 @@
     <div class="titulo">
       <h3 class="educ">Educación</h3>
       <br><br>
+      <button type="button" class="btn outline:none titulo" style="color: green; font-size: 19px;" routerLink="/newedu" *ngIf="isLogged">
+        <i class="fa fa-solid fa-plus"></i> Nueva educación</button>
       <table class="table table-borderless titulo">
         <tbody>
           <tr *ngFor="let Educacion of edu">
             <td>
-              <h4><br>{{Educacion.institucionEdu}}</h4>
+              <h4>{{Educacion.institucionEdu}}</h4>
             </td>
             <td>
-              <h4><br>{{Educacion.tituloEdu}}</h4>
+              <h4>{{Educacion.tituloEdu}}</h4>
             </td>
             <td>
-              <h4><br>{{Educacion.infoEdu}}</h4>
+              <h4>{{Educacion.infoEdu}}</h4>
             </td>
-            <td *ngIf="isLogged">
-              <button type="button" class="btn outline:none titulo" routerLink="/newedu">
-                <i class="fa fa-solid fa-plus"></i></button>
-
+            <div *ngIf="isLogged">
               <button class="btn outline:none titulo" routerLink="editedu/{{Educacion.id}}">
                 <i class="fa2 fa-regular fa-pen-to-square"></i></button>
 
               <button class="btn outline:none titulo" (click)="delete(Educacion.id)">
                 <i class="fas fa-light fa-trash-can"></i></button>
-            </td>
+            </div>
           </tr>
         </tbody>
       </table>
+
     </div>
   </div>
 </div>

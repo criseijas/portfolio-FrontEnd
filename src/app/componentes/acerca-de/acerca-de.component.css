@@ -1,32 +1,37 @@
-h1, h2, p{
+h1,
+h2,
+p {
 
     text-align: center;
 }
 
-.row{
-    background-color: white;
-}
-.col1{
+.col1 {
     font-weight: bold;
 }
-p{
+
+p {
     font-size: 17px;
 }
-.fa{
-    
-    font-size: 20px;
-    cursor: pointer;
-}
-.fa2{
-    font-size: 20px;
-    float: right;
-    margin: 3px;
-    cursor: pointer;
-}
-.fas{
-    font-size: 20px;
-    float: right;
-    margin: 3px;
-    cursor: pointer;
 
+.fa {
+
+    font-size: 20px;
+    cursor: pointer;
+    color: forestgreen
+}
+
+.fa2 {
+    font-size: 20px;
+    float: right;
+    margin: 3px;
+    cursor: pointer;
+    color: deepskyblue;
+}
+
+.fas {
+    font-size: 20px;
+    float: right;
+    margin: 3px;
+    cursor: pointer;
+    color: crimson;
 }

@@ -20,7 +20,7 @@ export class EditSkillComponent implements OnInit {
       data =>{
         this.skill = data;
       }, err =>{
-        alert("Se produjo un error al modificar la skill");
+        alert("Se produjo un error al modificar la habilidad");
         this.router.navigate(['']);
     }
     )
@@ -32,7 +32,7 @@ export class EditSkillComponent implements OnInit {
       data => {
       this.router.navigate(['']);
     }, err => {
-      alert("Se produjo un error al modificar la skill");
+      alert("Se produjo un error al modificar la habilidad");
       this.router.navigate(['']);
     })
   }

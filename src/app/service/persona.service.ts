@@ -38,6 +38,7 @@ export class PersonaService {
   public delete(id: number): Observable<any> {
     return this.httpClient.delete<any>(this.URL + `delete/${id}`);
   }
+  
   public getPersona(): Observable<Persona> {
     return this.httpClient.get<Persona>(this.URL + 'traer/perfil');
   }

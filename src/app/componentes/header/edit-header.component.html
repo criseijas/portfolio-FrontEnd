@@ -1,0 +1,43 @@
+<div class="container" *ngIf="head">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+                <br />
+                <div class="form-group">
+                    <label for="urlP">Url de la foto de perfil</label>
+                    <input type="text" class="form-control" id="urlP" name="urlP" [(ngModel)]="head.urlP" required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="urlLG">Url de Github</label>
+                    <input type="text" class="form-control" id="urlLG" name="urlLG" [(ngModel)]="head.urlLG"
+                        required>
+                </div>
+
+                <br />
+                <div class="form-group">
+                    <label for="urlLI">Url de Instagram</label>
+                    <input type="text" class="form-control" id="urlLI" name="urlLI" [(ngModel)]="head.urlLI"
+                        required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="urlLF">Url de Facebook</label>
+                    <input type="text" class="form-control" id="urlLF" name="urlLF" [(ngModel)]="head.urlLF"
+                        required>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="urlB">Url del Banner</label>
+                    <input type="text" class="form-control" id="urlB" name="urlB" [(ngModel)]="head.urlB"
+                        required>
+                </div>
+                <br/>
+                <button type="submit" class="btn btn-dark">
+                    Editar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
