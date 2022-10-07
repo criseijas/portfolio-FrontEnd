@@ -5,23 +5,24 @@
       <br>
       <button type="button" class="btn outline:none titulo" style="color: green; font-size: 19px;"
         routerLink="/nuevaexp" *ngIf="isLogged">
-        <i class="fa fa-solid fa-plus titulo"></i> &nbsp; Nueva experiencia </button>
+        <i class="fa fa-solid fa-plus titulo"></i></button>
       <table class="table table-borderless titulo">
         <tbody>
           <tr *ngFor="let Experiencia of expe">
             <td>
-              <h4><br>{{Experiencia.anioE}}</h4>
+              <h4>{{Experiencia.anioE}}</h4>
             </td>
             <td>
-              <h4><br>{{Experiencia.empresaE}}</h4>
+              <h4>{{Experiencia.empresaE}}</h4>
             </td>
             <td>
-              <h4><br>{{Experiencia.puestoE}}</h4>
+              <h4>{{Experiencia.puestoE}}</h4>
             </td>
             <td>
-              <h4><br>{{Experiencia.tareasE}}</h4>
+              <h4>{{Experiencia.tareasE}}</h4>
             </td>
             <td *ngIf="isLogged">
+
               <button class="btn outline:none" routerLink="editexp/{{Experiencia.id}}">
                 <i class="fa2 fa-regular fa-pen-to-square"></i></button>
 
@@ -32,5 +33,5 @@
         </tbody>
       </table>
     </div>
-  </div>
+  </div><br>
 </div>

@@ -1,6 +1,10 @@
-h1,
-h2,
-p {
+.nombre{
+    margin-left: 45px;
+}
+h2{
+    margin-left: 10px;
+}
+h3, p {
 
     text-align: center;
 }
@@ -34,4 +38,7 @@ p {
     margin: 3px;
     cursor: pointer;
     color: crimson;
+}
+.container{
+    background-color: lavender;
 }

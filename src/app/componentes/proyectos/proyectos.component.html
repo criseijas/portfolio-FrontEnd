@@ -1,9 +1,9 @@
 <div class="container titulo">
-  <h3>Mis Proyectos</h3>
+  <h3>Mis Proyectos</h3><br>
   <button type="button" class="btn outline:none titulo" style="color: green; font-size: 19px;" routerLink="/nuevopro"
     *ngIf="isLogged">
-    <i class="fa fa-solid fa-plus"></i> Nuevo proyecto</button>
-  <div class="card mb-3" style="max-width: 650px;">
+    <i class="fa fa-solid fa-plus"></i></button>
+  <div class="card text-bg-secondary mb-3" style="max-width: 650px;">
     <div class="row g-0" *ngFor="let proye of pro">
       <div class="col-md-4">
         <img [src]="proye.img" class="img-fluid rounded-start" alt="proyecto primero">
@@ -22,5 +22,5 @@
 
       </div>
     </div>
-  </div>
+  </div><br>
 </div>

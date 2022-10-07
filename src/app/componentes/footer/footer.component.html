@@ -1,8 +1,7 @@
-<div class="container border-top border-2 titulo" style="text-align: center;">
+<div class="container border-top border-2 titulo">
   <div class="row">
-    <!--<button type="button" class="btn outline:none titulo" routerLink="/nuevoconta" *ngIf="isLogged">
-      <i class="fa fa-solid fa-plus"></i></button>-->
-    <div class="col-xs-12" *ngFor="let contacto of conta">
+    <!--se anulo el boton de nuevo contacto ya que no es necesario traer una lista de contactos-->
+    <div class="col-xs-12" *ngFor="let contacto of conta"><br>
       <h6 class="text-muted lead">CONTACTO:</h6>
       <h6 class="text-muted">
         {{contacto.apellidoC}}, {{contacto.nombreC}}<br>
@@ -10,6 +9,9 @@
         Whatsapp: {{contacto.tel}}<br>
       </h6>
       <div *ngIf="isLogged">
+        <button type="button" class="btn outline:none titulo" routerLink="/nuevoconta">
+          <i class="fa fa-solid fa-plus"></i></button>
+
         <button class="btn outline:none" routerLink="editconta/{{contacto.id}}">
           <i class="fa2 fa-regular fa-pen-to-square"></i></button>
 

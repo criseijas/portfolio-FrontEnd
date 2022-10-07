@@ -9,7 +9,7 @@ import { Skills } from '../model/skills';
 })
 export class SkillServiceService {
 
-  URL = 'http://localhost:8080/skills/'
+  URL = 'https://datosapback.herokuapp.com/skills/';
 
   constructor(private httpClient: HttpClient) { }
 

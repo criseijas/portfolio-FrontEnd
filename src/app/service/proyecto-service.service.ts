@@ -8,7 +8,7 @@ import { Proyecto } from '../model/proyecto';
 })
 export class ProyectoServiceService {
 
-  URL = 'http://localhost:8080/proyecto/'
+  URL = 'https://datosapback.herokuapp.com/proyecto/';
 
 
   constructor(private httpClient: HttpClient) { }

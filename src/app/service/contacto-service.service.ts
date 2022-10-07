@@ -8,7 +8,7 @@ import { Contacto } from '../model/contacto';
 })
 export class ContactoServiceService {
 
-  URLcont = 'http://localhost:8080/contacto/';
+  URLcont = 'https://datosapback.herokuapp.com/contacto/';
 
   constructor(private httpClient: HttpClient) { }
 

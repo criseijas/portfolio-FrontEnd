@@ -26,7 +26,7 @@ export class NewSkillComponent implements OnInit {
         alert("habilidad añadida");
         this.router.navigate(['']);
       }, err => {
-        alert("No se pudo añadir la habilidad");
+        alert("No se pudo añadir la habilidad, ya fue creada");
         this.router.navigate(['']);
       }
     );

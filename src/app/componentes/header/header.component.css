@@ -3,8 +3,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 
 }
 
@@ -27,8 +27,8 @@ a {
 
 #perfil {
     filter: grayscale();
-    margin-left: 80px;
-    margin-top: 170px;
+    margin-left: 50px;
+    margin-top: 180px;
 
 }
 

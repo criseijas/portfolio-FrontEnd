@@ -22,13 +22,10 @@
     color: forestgreen
 }
 
-.container {
-    /*margin-top: 30px;*/
-    background-color:white;
-}
-
 .educ {
-    margin-top: 55px;
-    margin-left: 0px;
     text-shadow: grey 0 0 10px;
 }
+.container{
+    background-color: lavender;
+}
+

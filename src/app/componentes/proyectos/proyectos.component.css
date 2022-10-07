@@ -1,5 +1,5 @@
 h3 {
-    margin-top: 45px;
+    margin-top: 0px;
     text-shadow: grey 0 0 10px;
 }
 
@@ -26,4 +26,8 @@ h3 {
     margin: 3px;
     cursor: pointer;
     color: forestgreen
+}
+
+.container{
+    background-color: lavender;
 }
